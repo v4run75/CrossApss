@@ -1,0 +1,9 @@
+{% if customer %}
+    <ul>
+    {% for question in customer %}
+        <li>{{ customer.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Users are available.</p>
+{% endif %}
